@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('p2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-blur: 10px;
+            transition: background-blur 0.5s;
+        }
+        body:hover {
+            background-blur: 0;
+        }
+        .container {
+            text-align: center;
+            padding-bottom: 25%;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            opacity: 0.5;
+            margin: 0 10px;
+        }
+        .speaker-icon {
+            width: 32px;
+            height: 32px;
+            background: none;
+        }
+        .dropdown {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 9999;
+        }
+        .dropdown img {
+            width: 24px; /* Adjust the width as needed */
+            height: 24px; /* Adjust the height as needed */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: rgba(0, 0, 0, 0.523);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+         .dropdown-content a:hover {background-color: #0d8265}
+        .dropdown:hover .dropdown-content {display: block;}
+    </style>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('namePronunciation');
+            audio.play(yash.mp3);
+        }
+    </script>
+</head>
+<body>
+    <div class="dropdown">
+        <img src="m.png" alt="Menu" width="4" height="4">
+        <div class="dropdown-content">
+            <a href="#home"><img src="home.png" alt="Home"> Home</a>
+            <a href="#about1">About Me</a>
+            <a href="#work1">What Do I Do?</a>
+            <a href="#skills1">Skills and Projects</a>
+            <a href="#resume1">Resume</a>
+            <a href="#contact1">Contact Me</a>
+        </div>
+    </div>
+    <div class="container" id="home">
+        <img class="profile-pic" src="p3.jpg.jpg" alt="Profile Picture">
+        <h1>I am Yash Raj Singh <img class="speaker-icon" src="ijiji.png" onclick="playAudio()" alt="Speaker Icon"></h1>
+        <audio id="namePronunciation" src="yash.mp3" hidden></audio>
+        <p>I read. I code, cook food and scroll Instagram.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100012976329789"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/YashCh1626"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/yash-raj-singh-1b938a218/"><img src="lk.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Yash1626"><img src="github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/delusional_yash/"><img src="inst.png" alt="Instagram"></a>
+            <a href="mailto:yashch1611@gmail.com"><img src="email.png" alt="Email"></a>
+
+        </div>
+        <!-- about section -->
+    </div>
+    <div class="container" id="about1">
+        <div class="box" style="height:300px;width:1000px;border:200px white solid;background-color:transparent;">
+            <h1 style =  "color: rgba(202, 26, 55, 0.523)"";>About Me</h1>
+            <p style="font-family: 'Arial', Cursive;">
+                Hailing from the verdant valleys of Dehradun, I am Yash, a 21-year-old technophile with a zest for innovation and discovery. My journey in technology began amidst the foothills of the Himalayas and has led me to pursue a Bachelor's degree in Computer Science Engineering, where the binary world of computers fascinates me every single day.
+                
+                Beyond the confines of academia, I don the hat of a culinary wizard at home, a scribe of thoughts in solitude, and a beacon of knowledge as a tutor to those seeking enlightenment. My soul finds solace in the art of creation, be it delectable cuisines or weaving words that resonate.
+                
+                As a young Indian voyager, my spirit is kindled by the rugged beauty of steep mountains and the serene flow of rivers. These expeditions are not just travels; they are a quest for life's profound truths and the sheer joy of existence.
+                
+                In the tapestry of life, I am but a thread interwoven with the vibrant hues of Indian culture, where camaraderie is forged over a game of cricket in gullies, and wisdom is shared under the banyan tree. Join me as I navigate the terrains of technology and the landscapes of life, always with a heart full of dreams and a mind brimming with ideas.
+               
+                
+                Feel free to tweak it to better fit your personality and experiences. Enjoy crafting your digital persona! 🌐✨</p>
+        </div>
+        
+        </div>
+    </div>
+    <!-- work section -->
+    <div class="container" id="work1">
+       <h2 style="font-family: 'Times New Roman', Times, serif;color:rgb(72, 60, 60)">
+        What do I do?
+       </h3>
+       <p>
+        <strong>Student & Aspiring Technologist</strong><br>
+        - Pursuing a Bachelor's in Computer Science Engineering.<br>
+        - Deeply fascinated by the potential of technology to transform lives.<br>
+        - Actively engaged in academic projects and coding challenges.<br>
+        <br>
+        <strong>Home Cook & Culinary Enthusiast</strong><br>
+        - Experimenting with flavors and recipes that reflect my Indian heritage.<br>
+        - Sharing my culinary creations with friends and family.<br>
+        <br>
+        <strong>Writer & Storyteller</strong><br>
+        - Crafting narratives that blend personal experiences with imaginative fiction.<br>
+        - Maintaining a blog to share my thoughts and stories with a wider audience.<br>
+        <br>
+        <strong>Tutor & Mentor</strong><br>
+        - Providing guidance and support to students in need.<br>
+        - Specializing in simplifying complex concepts for better understanding.<br>
+        <br>
+        <strong>Adventurer & Explorer</strong><br>
+        - Exploring the natural beauty of mountains and rivers.<br>
+        - Embracing the thrill of travel and the discovery of new cultures.<br>
+        
+        
+        </div>
+    </div>
+    <!-- skills section -->
+    <div class="container" id="skills1">
+        <h2 style="font-family: 'Verdana', sans-serif;">Skills</h2>
+<p style="font-family: 'Georgia', serif;">
+    <strong>Computer Science Engineering (CSE)</strong><br>
+    <strong>Web Development</strong><br>
+    <strong>Database Management Systems (DBMS)</strong><br>
+    <strong>Problem Solving</strong><br>
+    <strong>Data Science</strong><br>
+    <strong>Python</strong><br>
+    <strong>Java</strong><br>
+</p></div>
+</div>
+<!-- resume section -->
+<div class="container" id="resume1">
+       <h1>And here's my resumé...</h1>
+</div><a href="https://drive.google.com/file/d/1znHiXGg6NkN-f1MdkHNCtdNTh6q_TDLa/view?usp=sharing">
+    <img src="view.png" alt="GitHub" style="width: 150px; height: 150px;">
+</a>
+
+</div>
+<!-- contact section -->
+<div class="container" id="contact1">
+       
+</div>
+</div>
+</body>
+</html>
